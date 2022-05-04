@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terms</title>
+    </head>
+    <body>
+        <h1>Terms</h1>
+        <div>
+            <p><strong>Navigation</strong></p>
+            <ul>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li>Terms</li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </div>
+        <div id="browse">
+            <!-- <p><a href="#" onClick="showAll()">Display all forms</a> </p> -->
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>id</th>
+                    <th>Terms</th>
+                </tr>
+                <tr>
+                    <td align="right">1</td>
+                    <td>Fall</td>
+                </tr>
+                <tr>
+                    <td align="right">2</td>
+                    <td>Winter</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Spring</td>
+                </tr>
+                <tr>
+                    <td align="right">4</td>
+                    <td>Summer</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+        </div> <!-- browse -->
+        <div id="insert">
+            <form method="POST" id="addPlanet">
+                <legend><strong>Add Term</strong></legend>
+                <fieldset class="fields">
+                    <label> Term </label> <input type="text" name="fname">
+                </fieldset>
+                <input class="btn" type="submit" id="addPerson" value="Add Term">
+                <!-- <input class="btn" type="button" value="cancel" onClick="browsePeople()"> -->
+            </form>
+        </div><!-- insert -->
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grades</title>
+</head>
+
+<body>
+    <h1>Grades</h1>
+
+    <div>
+        <p><strong>Navigation</strong></p>
+        <ul>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="courses.html">Courses</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <p><strong>Student grade (Yamoto Takeshi)</strong></p>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th></th>
+                <th></th>
+                <th>ID</th>
+                <th>Score</th>
+                <th>Subject</th>
+                <th>Term</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td><a href="#">Update</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>1</td>
+                <td>100</td>
+                <td>Physics</td>
+                <td>Spring</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td><a href="#">Update</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>2</td>
+                <td>80</td>
+                <td>Biology</td>
+                <td>Fall</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td><a href="#">Update</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>3</td>
+                <td>50</td>
+                <td>History</td>
+                <td>Winter</td>
+                <td>2022</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Add new grade -->
+    <div>
+        <form id="addNewGrade">
+            <legend><strong>Add New Grade</strong></legend>
+            <fieldset class="fields">
+                <label>Score</label> <input type="number" name="score" />
+                <label>Subject </label> <input type="text" name="subject" />
+                <label>Term </label><input type="text" name="term" /> 
+                <label>Year</label><input type="number" name="year" />
+            </fieldset>
+            <input class="btn" type="submit" id="submitAddNewGrade" value="Add New Grade" />
+        </form>
+    </div>
+
+    <!-- Update grade -->
+    <div>
+        <form id="updateGrade">
+            <legend><strong>Update Grade</strong></legend>
+                <fieldset class="fields">
+                <label>ID:</label> 1
+                  <label> Score </label> <input type="number" name="score" value="100">
+                  <label> Subject </label> <input type="text"  name="subject" value="Physics">
+                  <label> Term </label> <input type="text" name="term" value="Spring">
+                  <label> Year </label> <input type="number" name="year" value="2021">
+          </fieldset>
+          <input class="btn" type="submit" id="submitUpdateGrade" value="Update Grade">
+                <input class="btn" type="button" value="cancel" >
+        </form> 
+    </div>
+
+    <!-- Delete grade -->
+    <div>
+        <form id="deleteGrade">
+            <legend><strong>Delete Student Grade</strong></legend>
+            <fieldset class="fields">
+                <p>Please confirm the delete the student profile?</p>
+                ID: 1;
+                Score: 100;
+                Subject: Physics;
+                Term: Spring;
+                Year: 2021;
+            </fieldset>
+            <input class="btn" type="submit" id="submitDeleteGrade" value="Delete Grade">
+            <input class="btn" type="button" value="cancel">
+        </form>
+    </div>
+</body>
+
+</html>
